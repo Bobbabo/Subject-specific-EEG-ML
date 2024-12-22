@@ -1,4 +1,4 @@
-```markdown
+
 # Subject-Specific EEG Modeling
 
 This repository contains code for exploring **subject-specific layers (private encoding layers)** in EEG classification tasks. It builds on top of MOABB and Braindecode to implement and compare various architectures that aim to capture individual differences in EEG signals while still leveraging shared representations.
