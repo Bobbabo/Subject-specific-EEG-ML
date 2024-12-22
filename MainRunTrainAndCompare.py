@@ -104,7 +104,7 @@ clf6 = make_classifier(ShallowPrivateCollapsedDictNetSlow)
 
 # Create a pipeline with the classifier
 
-pipes = { "ShallowPrivateSpatialDictNetSlow": make_pipeline(clf1), "SubjectDicionaryFCNet": make_pipeline(clf2), "ShallowPrivateTemporalDictNetSlow": make_pipeline(clf3), "ShallowPrivateCollapsedDictNetSlow": make_pipeline(clf4), "ShallowFBCSPNet": make_pipeline(clf5), "CollapsedShallowNet": make_pipeline(clf6)}
+pipes = { "SubjectDicionaryFCNet": make_pipeline(clf1), "CollapsedShallowNet": make_pipeline(clf2), "ShallowPrivateTemporalDictNetSlow": make_pipeline(clf3), "ShallowFBCSPNet": make_pipeline(clf4), "ShallowPrivateSpatialDictNetSlow": make_pipeline(clf5), "ShallowPrivateCollapsedDictNetSlow": make_pipeline(clf6)}
 
 results_list = []
 # Ensure the output directory exists

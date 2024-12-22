@@ -10,4 +10,4 @@
  
 module load Anaconda3
 source activate my_env
-python Comparescores.py
+python MainRunTrainAndCompare.py
