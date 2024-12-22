@@ -25,7 +25,7 @@ EEG signals exhibit significant inter-subject variability, making it challenging
 
  **Install required packages**:
 
-    *Important*: This code requires Python 3.10.11 (not sure if it works with any other versions, but this one should work).
+   **Important!:** This code requires Python 3.10.11 (not sure if it works with any other versions, but this one should work).
 
    ```bash
    pip install -r requirements.txt
@@ -39,7 +39,7 @@ EEG signals exhibit significant inter-subject variability, making it challenging
 
 
 1. **Run the training script**:  
-   Look at `MainRunTrainAndCompare.ipynb` or `MainRun.py`.
+   Look at `MainRunTrainAndCompare.py` or `MainRun.ipynb`.
    Adjust paths and parameters (e.g., epochs, batch size, learning rate) as desired.
 
    By default, it will use MOABB’s MotorImagery paradigm and the BNCI2014\_001 dataset.
