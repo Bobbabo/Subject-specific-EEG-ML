@@ -15,13 +15,13 @@ from moabb.evaluations import CrossSessionEvaluation
 from moabb.paradigms import MotorImagery
 from moabb.utils import setup_seed
 
-from moabb.evaluations import SubjectParamEvaluation
+
+from moabb_Private_Encoder_Thesis.moabb.evaluations import SubjectParamEvaluation
 from shallow import CollapsedShallowNet ,ShallowFBCSPNet
 from shallowDict import ShallowPrivateTemporalDictNetSlow, ShallowPrivateSpatialDictNetSlow, ShallowPrivateCollapsedDictNetSlow, SubjectDicionaryFCNet
 
 mne.set_log_level(False)
 
-# Print Information PyTorch
 print(f"Torch Version: {torch.__version__}")
 
 # Set up GPU if it is there
@@ -32,7 +32,7 @@ print("GPU is", "AVAILABLE" if cuda else "NOT AVAILABLE")
 seed = 142
 setup_seed(seed)
 
-# Ensure that all operations are deterministic on GPU (if used) for reproducibility
+
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
